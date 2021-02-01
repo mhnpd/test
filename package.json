@@ -1,7 +1,7 @@
 {
-  "name": "react-toasted-notifications",
-  "version": "0.1.0",
-  "homepage": "http://gitname.github.io/react-toasted-notifications",
+  "name": "react-loader-spinner",
+  "version": "3.0.0",
+  "homepage": "https://mhnpd.github.io/react-loader-spinner/",
   "dependencies": {
     "bootstrap": "^4.6.0",
     "react": "^17.0.1",
