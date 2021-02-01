@@ -1,57 +1,41 @@
 {
-  "name": "react-loader-spinner",
-  "version": "3.1.14",
-  "description": " react-spinner-loader provides simple React.js spinner component which can be implemented for async wait operation before data load to the view.",
-  "unpkg": "dist/index.js",
-  "jsdelivr": "dist/index.js",
-  "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mhnpd/react-loader-spinner"
+  "name": "react-toasted-notifications",
+  "version": "0.1.0",
+  "homepage": "http://gitname.github.io/react-toasted-notifications",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-loader-spinner": "^3.1.14",
+    "react-scripts": "4.0.1"
   },
-  "author": {
-    "name": "Mohan Upadhyay",
-    "url": "https://mohanpd.com.np"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mhnpd/react-loader-spinner"
-  },
-  "homepage": "https://mhnpd.github.io/react-loader-spinner/",
-  "keywords": [
-    "react-component",
-    "loader",
-    "spinner",
-    "react"
-  ],
   "scripts": {
-    "build": "babel src -d dist",
-    "release:major": "npm version major && git push --tags",
-    "release:minor": "npm version minor && git push --tags",
-    "release:patch": "npm version patch && git push --tags",
-    "release:beta": "npm version prerelease && npm run build && npm publish --tag beta",
-    "start": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "react": "^16.13.1",
-    "react-is": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "@babel/cli": "^7.11.6",
-    "babel-loader": "^8.1.0",
-    "@babel/core": "^7.11.6",
-    "@storybook/react": "^6.0.21",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "@storybook/addon-links": "^6.0.21",
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-essentials": "^6.0.21"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
-  },
-  "dependencies": {
-    "prop-types": "^15.7.2"
+    "gh-pages": "^3.1.0"
   }
 }
