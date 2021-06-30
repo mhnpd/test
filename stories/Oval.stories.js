@@ -1,7 +1,6 @@
 import React from "react";
 import Loader from "../src/index";
 
-import "../src/loader/css/react-spinner-loader.css";
 
 const center = {
   display: "flex",
@@ -11,19 +10,21 @@ const center = {
 };
 
 export default {
-  title: "Ovals",
-  component: Ovals,
+  title: "Oval",
+  component: Oval,
 };
 
-/** Ovals */
+/* Oval */
 export const Oval = (props) => {
   return (
     <div style={center}>
       <Loader
         className="test"
-        color="green"
+        color= "green"
+        secondaryColor="yellow"
         width={200}
         height={200}
+        strokeWidth={5}
         type="Oval"
       />
     </div>
